@@ -1,0 +1,164 @@
+@mixin abs($abs:absolute){
+    position:$abs;
+}
+@mixin sca($sca:scale(0.8)){
+    transform:$sca;
+    -ms-transform:$sca; 	/* IE 9 */
+    -moz-transform:$sca; 	/* Firefox */
+    -webkit-transform:$sca; /* Safari 和 Chrome */
+    -o-transform:$sca; 	/* Opera */
+}
+
+#home-pw{
+    width: 100%;
+    height: 49%;
+    background: url("../image/4_09.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: 2%;
+    left: 0%;
+    .pw-i{
+        width: 10px;
+        height: 10px;
+        background: #01ffaf;
+        border-radius: 5px;
+        left: 5%;
+        top: 5%;
+        @include abs;
+    }
+    .pw-title{
+        left: 10%;
+        top: 3%;
+        color: #01ffaf;
+        @include abs;
+        font-size: 1vw;
+        letter-spacing: 3px;
+    }
+    #pwTdBar{
+        width: 82%;
+        height: 33%;
+        left: 2%;
+        top: 17%;
+        @include abs;
+    }
+    #pwFtdBar{
+        width: 82%;
+        height: 33%;
+        left: 2%;
+        top: 62%;
+        @include abs;
+    }
+    p.zs{
+        right:3%;
+        top: 8%;
+        color: #ffa800;
+        @include abs;
+        @include sca;
+        font-size: 1vw;
+        width: 50%;
+       text-align: right;
+       letter-spacing: 2px;
+    }
+    p.fzs{
+        right:3%;
+        top: 53%; 
+        text-align: right;
+       
+    }
+    .td0{
+        left: 84%;
+        top: 24%;
+        @include abs;
+        height: 10px;
+        width: 110px;
+        
+    }
+    .td1{
+        left: 84%;
+        top: 30%;
+        @include abs;
+         height: 10px;
+        width: 110px;
+    }
+    .td2{
+        left: 84%;
+        top: 36%;
+        @include abs;
+         height: 10px;
+        width: 110px;
+    }
+    .ftd0{
+        left: 84%;
+        top: 70%;
+        @include abs;
+         height: 10px;
+        width: 110px;
+    }
+    .ftd1{
+        left: 84%;
+        top: 76%;
+        @include abs;
+         height: 10px;
+        width: 110px;
+    }
+    .ftd2{
+        left: 84%;
+        top: 82%;
+        @include abs;
+         height: 10px;
+        width: 110px;
+    }
+    .tdgz{
+        width: 10px;
+        height: 10px;
+       
+        float: left;
+    }
+    .tdbg0{
+        background: #ff4e00;
+        border: 0.5px solid #ff4e00;
+    }
+    .tdbg1{
+        background: #ffa800;
+        border: 0.5px solid #ffa800;
+    }
+    .tdbg2{
+        background: #01dc79;
+        border: 0.5px solid #01dc79;
+    }
+    p.xz{
+        float: left;
+        color: #fff;
+        margin-top: 0px;
+        margin-left: 3px;
+        @include sca(scale(0.7));
+        font-size: 10px;
+        letter-spacing: 1px;
+        transform-origin:0 0; 
+        -ms-transform-origin:0 0;       /* IE 9 */
+        
+        
+        -webkit-transform-origin:0 0;   /* Safari 和 Chrome */
+        
+        
+        -moz-transform-origin:0 0;      /* Firefox */
+        
+        
+        -o-transform-origin:0 0;        /* Opera */
+      
+        .tdcg0{
+            color: #ff4e00;
+           
+        }
+        .tdcg1{
+            color: #ffa800;
+          
+        }
+        .tdcg2{
+            color: #01dc79;
+          
+        }
+      
+    }
+
+}

@@ -1,0 +1,144 @@
+.ant-calendar-picker-container .ant-calendar,.ant-time-picker-panel .ant-time-picker-panel-inner{
+
+  background: #007a77;
+}
+.ant-calendar .ant-calendar-today-btn{
+  color: #fff;
+}
+.ant-time-picker-panel-inner .ant-time-picker-panel-input-wrap{
+  padding: 7px 10px 7px 10px;
+}
+#home-header {
+  width: 100%;
+  height: 8%;
+  background: url("../image/4_01.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  .tf {
+    position: absolute;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+  .tf-text {
+    font-size: 1vw;
+    transform:scale(0.8);
+    -ms-transform:scale(0.8); 	/* IE 9 */
+    -moz-transform:scale(0.8); 	/* Firefox */
+    -webkit-transform:scale(0.8); /* Safari 和 Chrome */
+    -o-transform:scale(0.8); 	/* Opera */
+    top: 8%;
+    left: 1%;
+    letter-spacing: 2px;
+  
+  }
+  .tf-title {
+    font-size: 1.3vw;
+    top: 48%;
+    left: 3%;
+  }
+  .sj-title {
+    font-size: 1vw;
+    top: 45%;
+    right: 20%;
+    color: #01ffb1;
+    letter-spacing: 2px;
+    
+  }
+  .mc-title {
+    font-size: 1.9vw;
+    left: 0.5%;
+    top: 0;
+    bottom: 10%;
+    right: 0;
+    margin: auto;
+    color: #01ffb1;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+  }
+  
+  .input-year {
+    div{
+      height: 100%;
+    }
+    input{
+      border: none;
+      outline: none;
+      background: none;
+      width: 100%;
+      height: 100%;
+      color: #005343;
+      letter-spacing: normal;
+    
+    }
+    .ant-input:focus {    
+      border: none !important;
+      outline: none;
+      -webkit-box-shadow: none; 
+      box-shadow: none; 
+  }
+    i{
+      display: none;
+    }
+    top: 47%;
+    right: 12.5%;
+    height: 35%;
+    width: 8%;
+  }
+  .input-time{
+    input{
+      border: none;
+      outline: none;
+      background: none;
+      width: 100%;
+      height: 100%;
+      color: #005343;
+      letter-spacing: normal;
+    
+    }
+    i{
+      display: none;
+    }
+    top: 47%;
+    right: 4.8%;
+    height: 35%;
+    width: 8%;
+  }
+ .sj-cx{
+  font-size: 1vw;
+  top: 45%;
+  right: 1%;
+  letter-spacing: 2px;
+  cursor: pointer;
+  display: table;
+    width: 3.5%;
+    height: 38%;
+  
+    text-align: center;
+    span{
+      display: table-cell;
+      vertical-align: middle;
+    }
+ }
+  input::placeholder {
+    color: #005343;
+    text-indent: 5px;
+  }
+  input ::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #005343;
+    text-indent: 5px;
+  }
+
+  input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    text-indent: 15px;
+    color: #005343;
+  }
+
+  input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    text-indent: 15px;
+    color: #005343;
+  }
+}

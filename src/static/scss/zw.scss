@@ -1,0 +1,156 @@
+@mixin abs($abs: absolute) {
+  position: $abs;
+}
+@mixin sca($sca: scale(1.1)) {
+  transform: $sca;
+  -ms-transform: $sca; /* IE 9 */
+  -moz-transform: $sca; /* Firefox */
+  -webkit-transform: $sca; /* Safari 和 Chrome */
+  -o-transform: $sca; /* Opera */
+}
+#home-zw {
+  width: 100%;
+  height: 49%;
+  background: url("../image/newz1.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  overflow: hidden;
+  .zw-i {
+    width: 10px;
+    height: 10px;
+    background: #01ffaf;
+    border-radius: 5px;
+    left: 5%;
+    top: 5%;
+    @include abs;
+  }
+  .zw-title {
+    left: 10%;
+    top: 3%;
+    color: #01ffaf;
+    @include abs;
+    font-size: 1vw;
+    letter-spacing: 3px;
+    transition: transform 1s;
+  }
+  .selectArea {
+    width: 153.5px;
+    height: 22px;
+
+    right: 3%;
+    top: 5%;
+    position: absolute;
+
+    .ant-select-selection {
+      background: transparent;
+      border-radius: unset;
+      border: 1px solid #007452;
+    }
+    .ant-select-selection-selected-value {
+      color: #fff;
+    }
+    .ant-select .ant-select-selection__rendered,
+    .ant-select .ant-select-selection--single {
+      line-height: normal;
+      height: 100%;
+    }
+    .ant-select-arrow,
+    .ant-select-selection__placeholder {
+      color: #fff;
+    }
+  }
+  .tfxx {
+    width: 70%;
+    height: 16%;
+    color: #fff;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    text-align: left;
+    font-size: 1vw;
+    text-align: left;
+    .tfname,
+    .tfsj {
+      width: 100%;
+
+      display: table;
+      font {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    .tfname {
+      height: 60%;
+    }
+    .tfsj {
+      position: absolute;
+      left: -10%;
+      height: 40%;
+      font {
+        @include sca(scale(0.8));
+        span {
+          color: #01ffaf;
+        }
+      }
+    }
+  }
+  .btny,.btnz{
+    width: 18%;
+    height: 10%;
+    background: url("../image/newz2.png") no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    position: absolute;   
+    top: 15%;
+    display: table;
+    text-align: center;
+    cursor: pointer;
+    span{
+        display: table-cell;
+        vertical-align: middle;
+        @include sca(scale(0.8));
+    }
+  }
+  .btnbg{
+    background: url("../image/newz3.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  .btny{
+     right: 3%;
+  }
+  .btnz{
+    right: 23%;
+  }
+
+  #zecharts{
+    width: 200%;
+    height: 59%;
+    position: absolute;
+    bottom: 4%;
+    left: 0%;
+  
+    transition: left 0.1s;
+    -ms-transition: left 0.1s; /* IE 9 */
+    -moz-transition: left 0.1s; /* Firefox */
+    -webkit-transition: left 0.1s; /* Safari 和 Chrome */
+    -o-transition: left 0.1s; /* Opera */
+    #zech1,#zech2{
+      width: 48%;
+      height: 100%;
+   
+    }
+    #zech1{
+     
+     float: left; 
+     margin-left: 1%;
+   
+    }
+    #zech2{
+      float: right; 
+      margin-right: 1%;
+    }
+  }
+}
