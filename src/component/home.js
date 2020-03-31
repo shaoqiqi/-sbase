@@ -8,7 +8,7 @@ import Yxpb from './yxpb';
 import Yx from './yx';
 import Pb from './pb';
 import '../static/scss/home.scss';
-import 'antd/dist/antd.css';
+
 
 class home extends React.Component {
     constructor(props) {

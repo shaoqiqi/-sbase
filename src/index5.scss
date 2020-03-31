@@ -1,15 +1,28 @@
+@import '~antd/dist/antd.css';
 *{
   margin: 0px;
   padding: 0px;  
 }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: blue;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.ant-calendar-picker-container .ant-calendar,.ant-time-picker-panel .ant-time-picker-panel-inner{
+
+  background: #007a77;
+}
+.ant-calendar .ant-calendar-today-btn{
+  color: #fff;
+}
+.ant-time-picker-panel-inner .ant-time-picker-panel-input-wrap{
+  padding: 7px 10px 7px 10px;
 }

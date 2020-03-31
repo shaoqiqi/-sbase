@@ -5,12 +5,12 @@ class reg extends React.Component {
         super(props);
         this.state = { date: new Date() };
     }
-
-
+   
+   
     render() {
         return <div>我是注册
 
-
+<span onClick={(e)=>this.aaaww(55,55,e)}>主持词</span>
 
 		</div>;
 

@@ -80,13 +80,19 @@ export default class header extends Component {
         this.setState({ open:false });
     }
 
-   
+    aaaww(a,v,w){
+        // alert(132)
+       //this.props.history.push({pathname:'reg',state:{aaa:123}})
+     //  w.persist()
+       console.log(a,w)
+       }
 
     render() {
         return (
             <div id="home-header">
                 <span className="tf-text tf">当前台风:</span>
                 <span className="tf-title tf">{this.state.tfname}</span>
+                <span onClick={(e)=>this.aaaww(55,55,e)}>主持词</span>
                 <div className="mc-title tf">国网宁波供电公司应急指挥平台</div>             
                 <span className="sj-title tf" >时间:</span>
                 <DatePicker className="input-year tf"  placeholder="年月日" onChange={this.onChange} />

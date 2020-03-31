@@ -1,7 +1,7 @@
 import {CHANGEINPUT,ADD,SUB} from  './actionType'
 import {combineReducers} from  'redux'
 
- function textName(state = {text:'你好，邵',name:'邵奇'},action){
+ function textName5(state = {text:'你好，邵',name:'邵奇'},action){
 	
 	switch (action.type){
 		case CHANGEINPUT: 
@@ -12,7 +12,7 @@ import {combineReducers} from  'redux'
 	
 	return state
 }
-function counts(count = 0,action){
+function counts1(count = 0,action){
 	
 	switch (action.type){		
 		case ADD:
@@ -31,4 +31,4 @@ function counts(count = 0,action){
 
 
 
-export default combineReducers({textName,counts})
+export default combineReducers({textName5,counts1})

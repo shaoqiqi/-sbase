@@ -10,8 +10,9 @@ import {Provider} from 'react-redux';
 import store from './store/index';
 import {persistor} from './store/index';
 import {PersistGate} from 'redux-persist/lib/integration/react';
-import './index.scss';
 
+
+import './index5.scss';
 import Routers from './router';
 import * as serviceWorker from './serviceWorker';
 import {getCodeByb4,getJsonByb4} from './util/base64';

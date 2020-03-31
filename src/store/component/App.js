@@ -1,20 +1,20 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import myLogin from '../../component/login';
-import home from '../../component/home';
+
 import {changeInput,add,sub} from '../action';
 
 function mapStateToProps(state){
 	console.log(state)
 	
-	return {textName:state.textName,
+	return {textNamea:state.textName5,
 		
-			   counts:state.counts,
+			   counts2:state.counts1,
 	      }
 }
 function mapDispatchToProps(dispatch){
 	return {onChange:(e)=>dispatch(changeInput(e.target.value)),
-					add:()=>dispatch(add()),
+					add1:()=>dispatch({type:'add'}),
 					sub:()=>dispatch(sub()),
 	      }
 }
