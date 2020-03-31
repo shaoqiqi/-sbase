@@ -26,7 +26,7 @@ class Login extends React.Component {
 	}
 
    componentWillMount(){
-   	 this.aaa=5555554
+   	 this.aaa=5555556
    	
    }
    componentDidMount(){
