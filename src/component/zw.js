@@ -8,7 +8,193 @@ export default class zw extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			areaData: [				
+			areaData: [{	
+				name: '海曙',
+				'xltz': {
+					tyzts: [200, 111, 222, 60, 30],
+					tzbcg: [20, 11, 222, 60, 30],
+					tzcg: [30, 11, 22, 60, 30],
+					lt: [100, 111, 22, 40, 90],
+					whf: [240, 161, 22, 60, 310]
+				},
+				'bdzty': {
+					wuqf: [30, 55, 44],
+					siqf: [26, 29, 36],
+					sanqf: [39, 42, 20],
+					erqf: [36, 32, 19],
+					yiqf: [29, 26, 33]
+				}
+			},
+			{	
+				name: '江北',
+				'xltz': {
+					tyzts: [200, 111, 222, 60, 30],
+					tzbcg: [20, 11, 222, 60, 30],
+					tzcg: [300, 111, 222, 60, 30],
+					lt: [100, 111, 22, 40, 90],
+					whf: [240, 161, 22, 60, 310]
+				},
+				'bdzty': {
+					wuqf: [30, 55, 44],
+					siqf: [26, 29, 36],
+					sanqf: [39, 42, 20],
+					erqf: [36, 32, 19],
+					yiqf: [29, 26, 33]
+				}
+			},
+			{	
+				name: '镇海',
+				'xltz': {
+					tyzts: [200, 111, 222, 60, 30],
+					tzbcg: [20, 11, 222, 60, 30],
+					tzcg: [300, 21, 322, 20, 30],
+					lt: [100, 111, 22, 40, 90],
+					whf: [240, 161, 22, 60, 310]
+				},
+				'bdzty': {
+					wuqf: [30, 55, 44],
+					siqf: [26, 29, 36],
+					sanqf: [39, 42, 20],
+					erqf: [36, 32, 19],
+					yiqf: [29, 26, 33]
+				}
+			},
+			{	
+				name: '北仑',
+				'xltz': {
+					tyzts: [200, 111, 222, 60, 30],
+					tzbcg: [20, 11, 222, 60, 30],
+					tzcg: [100, 191, 172, 60, 30],
+					lt: [100, 111, 22, 40, 90],
+					whf: [240, 161, 22, 60, 310]
+				},
+				'bdzty': {
+					wuqf: [30, 55, 44],
+					siqf: [26, 29, 36],
+					sanqf: [39, 42, 20],
+					erqf: [36, 32, 19],
+					yiqf: [29, 26, 33]
+				}
+			},
+			{	
+				name: '杭湾',
+				'xltz': {
+					tyzts: [200, 111, 222, 60, 30],
+					tzbcg: [20, 11, 222, 60, 30],
+					tzcg: [300, 111, 222, 60, 30],
+					lt: [100, 111, 22, 40, 90],
+					whf: [240, 161, 22, 60, 310]
+				},
+				'bdzty': {
+					wuqf: [30, 55, 44],
+					siqf: [26, 29, 36],
+					sanqf: [39, 42, 20],
+					erqf: [36, 32, 19],
+					yiqf: [29, 26, 33]
+				}
+			},
+			{	
+				name: '鄞州',
+				'xltz': {
+					tyzts: [200, 111, 222, 60, 30],
+					tzbcg: [20, 11, 222, 60, 30],
+					tzcg: [50, 51, 222, 60, 30],
+					lt: [100, 111, 22, 40, 90],
+					whf: [240, 161, 22, 60, 310]
+				},
+				'bdzty': {
+					wuqf: [30, 55, 44],
+					siqf: [26, 29, 36],
+					sanqf: [39, 42, 20],
+					erqf: [36, 32, 19],
+					yiqf: [29, 26, 33]
+				}
+			},
+			{	
+				name: '慈溪',
+				'xltz': {
+					tyzts: [200, 111, 222, 60, 30],
+					tzbcg: [20, 11, 222, 60, 30],
+					tzcg: [300, 111, 222, 60, 30],
+					lt: [100, 111, 22, 40, 90],
+					whf: [240, 161, 22, 60, 310]
+				},
+				'bdzty': {
+					wuqf: [30, 55, 44],
+					siqf: [26, 29, 36],
+					sanqf: [39, 42, 20],
+					erqf: [36, 32, 19],
+					yiqf: [29, 26, 33]
+				}
+			},
+			{	
+				name: '余姚',
+				'xltz': {
+					tyzts: [200, 111, 222, 60, 30],
+					tzbcg: [20, 11, 222, 60, 30],
+					tzcg: [300, 111, 222, 60, 30],
+					lt: [100, 111, 22, 40, 90],
+					whf: [240, 161, 22, 60, 310]
+				},
+				'bdzty': {
+					wuqf: [30, 55, 44],
+					siqf: [26, 29, 36],
+					sanqf: [39, 42, 20],
+					erqf: [36, 32, 19],
+					yiqf: [29, 26, 33]
+				}
+			},
+			{	
+				name: '奉化',
+				'xltz': {
+					tyzts: [200, 111, 222, 60, 30],
+					tzbcg: [20, 11, 222, 60, 30],
+					tzcg: [300, 111, 222, 60, 30],
+					lt: [100, 111, 22, 40, 90],
+					whf: [240, 161, 22, 60, 310]
+				},
+				'bdzty': {
+					wuqf: [30, 55, 44],
+					siqf: [26, 29, 36],
+					sanqf: [39, 42, 20],
+					erqf: [36, 32, 19],
+					yiqf: [29, 26, 33]
+				}
+			},
+			{	
+				name: '宁海',
+				'xltz': {
+					tyzts: [200, 111, 222, 60, 30],
+					tzbcg: [20, 11, 222, 60, 30],
+					tzcg: [300, 111, 222, 60, 30],
+					lt: [100, 111, 22, 40, 90],
+					whf: [240, 161, 22, 60, 310]
+				},
+				'bdzty': {
+					wuqf: [30, 55, 44],
+					siqf: [26, 29, 36],
+					sanqf: [39, 42, 20],
+					erqf: [36, 32, 19],
+					yiqf: [29, 26, 33]
+				}
+			},
+			{	
+				name: '象山',
+				'xltz': {
+					tyzts: [200, 111, 222, 60, 30],
+					tzbcg: [20, 11, 222, 60, 30],
+					tzcg: [300, 111, 222, 60, 30],
+					lt: [100, 111, 22, 40, 90],
+					whf: [240, 161, 22, 60, 310]
+				},
+				'bdzty': {
+					wuqf: [30, 55, 44],
+					siqf: [26, 29, 36],
+					sanqf: [39, 42, 20],
+					erqf: [36, 32, 19],
+					yiqf: [29, 26, 33]
+				}
+			}			
 			],
 			cla:'全宁波',
 			zindex: 0
@@ -364,13 +550,17 @@ export default class zw extends Component {
   
 
 	sendzwdata=(date)=>{
-		let params = {};
-        if(date){
-            params = {...date}
-        }
-		zwData(params)
-		.then((res)=>{			
-			this.setState({areaData:res.data})
+		//let params = {};
+       // if(date){
+        //    params = {...date}
+       // }
+		//zwData(params)
+		//.then((res)=>{			
+		//	this.setState({areaData:res.data})
+		let zech1 = document.getElementById("zech1");
+		this.myChart1 = React.$echarts.init(zech1);
+		let zech2 = document.getElementById("zech2");
+		this.myChart2 = React.$echarts.init(zech2);	
 			let zjarea = {
 				name: '全宁波',
 				'xltz': {
@@ -456,11 +646,8 @@ export default class zw extends Component {
 			this.myChart1.setOption(this.option, true);
 			this.myChart2.setOption(this.option1, true); 
 			this.setState({ areaData: this.state.areaData,zindex:0,cla:'全宁波' })
-		})
-		let zech1 = document.getElementById("zech1");
-		this.myChart1 = React.$echarts.init(zech1);
-		let zech2 = document.getElementById("zech2");
-		this.myChart2 = React.$echarts.init(zech2);	
+	//	})
+	
 
 	}
 	componentDidMount() {	
@@ -508,7 +695,7 @@ export default class zw extends Component {
 				</div>
 				<div className="tfxx">
 		
-						<div className="tfsj"> <font>最新截止时间: <span >{this.props.tfsj}</span></font></div>
+						<div className="tfsj"> <font>最新截止时间: <span >{'2019-12-2 10:29:35'}</span></font></div>
 				</div>
 				<div className={'btnz ' + (0 == this.state.zindex ? 'btnbg' : '')} onClick={this.setzIndex.bind(this, 0)}><span>线路跳闸</span></div>
 				<div className={'btny ' + (1 == this.state.zindex ? 'btnbg' : '')} onClick={this.setzIndex.bind(this, 1)}><span>变电站停运</span></div>

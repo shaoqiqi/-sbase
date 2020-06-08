@@ -48,28 +48,28 @@ export default class header extends Component {
       //  this.props.datafn.yxfn({TfDate:this.state.dateString+' '+this.state.timeString+":00:00"});  
       //  this.props.datafn.pbfn({TfDate:this.state.dateString+' '+this.state.timeString+":00:00"}); 
         
-        tfData({TfDate:this.state.dateString+' '+this.state.timeString+":00:00"})
-        .then(res => {
+       // tfData({TfDate:this.state.dateString+' '+this.state.timeString+":00:00"})
+       // .then(res => {
           
-                this.state.tfname = res.data.name;
-                this.props. getTfsj(res.data.deadline);
-                this.props.getDateEnd(this.state.dateString+' '+this.state.timeString+":00:00")
-        }).catch(res => {
-            message.warning('该时间无历史数据!',2);
+                //this.state.tfname = res.data.name;
+                // this.props. getTfsj(res.data.deadline);
+                // this.props.getDateEnd(this.state.dateString+' '+this.state.timeString+":00:00")
+       // }).catch(res => {
+        //    message.warning('该时间无历史数据!',2);
 
-        })
+       // })
 
        
     }
 
 
     componentDidMount(){
-        tfData()
-        .then(res => {
+        // tfData()
+        // .then(res => {
           
-                this.state.tfname = res.data.name;
-                this.props. getTfsj(res.data.deadline)
-        })
+        //         this.state.tfname = res.data.name;
+        //         this.props. getTfsj(res.data.deadline)
+        // })
 
 
     }
@@ -91,8 +91,8 @@ export default class header extends Component {
         return (
             <div id="home-header">
                 <span className="tf-text tf">当前台风:</span>
-                <span className="tf-title tf">{this.state.tfname}</span>
-                <span onClick={(e)=>this.aaaww(55,55,e)}>主持词</span>
+                <span className="tf-title tf">{'第18号“米娜”台风'}</span>
+                {/* <span onClick={(e)=>this.aaaww(55,55,e)}>主持词</span> */}
                 <div className="mc-title tf">国网宁波供电公司应急指挥平台</div>             
                 <span className="sj-title tf" >时间:</span>
                 <DatePicker className="input-year tf"  placeholder="年月日" onChange={this.onChange} />

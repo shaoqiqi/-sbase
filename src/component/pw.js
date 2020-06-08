@@ -8,16 +8,22 @@ export default class pw extends Component {
         super(props);
         this.state = {
             pwdata:{
-                datatdList:[100,200,100,200,100,200,100],
+                datatdList:[100,200,100,200,100,200,300],
+                datatdList1:[100,200,100,200,100,100,0],
+                datatdList2:[100,100,0,100,100,0,0],
+              
                 tdList: [
-                 { name: '新增', count: 100},
-                 { name: '处理', count: 200}, 
-                 { name: '修复', count: 300}
+                 { name: '新增', count: 400},
+                 { name: '处理', count: 400}, 
+                 { name: '修复', count: 400}
                 ],
                 dataftdList:[100,200,100,200,100,200],
+                dataftdList1:[100,100,100,100,100,100],
+                dataftdList2:[50,0,50,200,0,0],
+              
                 ftdList: [
-                 { name: '新增',   count: 100},
-                 { name: '处理',   count: 200},
+                 { name: '新增',   count: 300},
+                 { name: '处理',   count: 300},
                  { name: '修复',   count: 300}
                 ]
              }             
@@ -34,7 +40,7 @@ export default class pw extends Component {
                 ftactData1.push(this.state.pwdata.ftdList[j].type)                          
               }           
               if(this.state.pwdata.tdList[j].bg){              
-               ftactData.push(this.state.pwdata.tdList[j].type)                          
+                ftactData.push(this.state.pwdata.tdList[j].type)                          
              }
         }
         if(ftactData.length == 0 ){
@@ -45,20 +51,33 @@ export default class pw extends Component {
         this.setState({ pwdata: this.state.pwdata })
         let params = {};  
         if(this.props.dateEnd){
-            params =  {type: ftactData.join(),type1: ftactData1.join(),TfDate:this.props.dateEnd}
+            params =  {type: ftactData,type1: ftactData1,TfDate:this.props.dateEnd}
         } else{
-            params =  {type: ftactData.join(),type1: ftactData1.join()}
+            params =  {type: ftactData,type1: ftactData1}
         }  
-        pwData(params)
-        .then(res => {
-          
-            this. max =  Math.max(... res.data.datatdList ) + 100;
+        if(params.type1.length ==2){
+            this. max =  Math.max(this.state.pwdata.datatdList2) + 100;
             this. maxList = [this. max,this. max, this. max, this. max, this. max, this. max, this. max];
-            this.option.series[0].data =  this.maxList; 
-            this.option.series[1].data = res.data.datatdList;
+            this.option.series[0].data = this. maxList;
+            this.option.series[1].data = this.state.pwdata.datatdList2;
             this.myChart.setOption(this.option, true);
+        }else if(params.type1.length ==1){
+            this. max =  Math.max(this.state.pwdata.datatdList1) + 100;
+            this. maxList = [this. max,this. max, this. max, this. max, this. max, this. max, this. max]; 
+            this.option.series[0].data = this. maxList;
+            this.option.series[1].data = this.state.pwdata.datatdList1;
+            this.myChart.setOption(this.option, true);
+        }
+        // pwData(params)
+        // .then(res => {
+          
+        //     this. max =  Math.max(... res.data.datatdList ) + 100;
+        //     this. maxList = [this. max,this. max, this. max, this. max, this. max, this. max, this. max];
+        //     this.option.series[0].data = this.maxList; 
+        //     this.option.series[1].data = res.data.datatdList;
+        //     this.myChart.setOption(this.option, true);
 
-        })
+        // })
        
 
     }
@@ -84,18 +103,27 @@ export default class pw extends Component {
         this.setState({ pwdata: this.state.pwdata })
         let params = {};  
         if(this.props.dateEnd){
-            params =  {type: ftactData.join(),type1: ftactData1.join(),TfDate:this.props.dateEnd}
+            params =  {type: ftactData,type1: ftactData1,TfDate:this.props.dateEnd}
         } else{
-            params =  {type: ftactData.join(),type1: ftactData1.join()}
+            params =  {type: ftactData,type1: ftactData1}
         } 
-        pwData(params)
-        .then(res => {              
-            this. max1 =  Math.max(...res.data.dataftdList) + 20;
+        if(params.type1.length ==2){
+            this. max1 =  Math.max(this.state.pwdata.dataftdList2) + 20;
             this. maxList1 = [this. max1,this. max1, this. max1, this. max1, this. max1, this. max1];  
             this.option1.series[0].data = this. maxList1;
-            this.option1.series[1].data = res.data.dataftdList;
+            this.option1.series[1].data = this.state.pwdata.dataftdList2;
             this.myChart1.setOption(this.option1, true);
-        })
+        }else if(params.type1.length ==1){
+            this. max1 =  Math.max(this.state.pwdata.dataftdList1) + 20;
+            this. maxList1 = [this. max1,this. max1, this. max1, this. max1, this. max1, this. max1];  
+            this.option1.series[0].data = this. maxList1;
+            this.option1.series[1].data = this.state.pwdata.dataftdList1;
+            this.myChart1.setOption(this.option1, true);
+        }
+       // pwData(params)
+       // .then(res => {              
+          
+       // })
     
     }
 
@@ -114,10 +142,10 @@ export default class pw extends Component {
         }else{
             params = {type:"wpg,ypg,ycl",type1:"wpg,ypg,ycl"}
         }
-        pwData(params)
-        .then(res=>{
+        // pwData(params)
+        // .then(res=>{
         //  this.state.pwdata = res.data;
-        this.state.pwdata = res.data
+       // this.state.pwdata = res.data
          this.tdData = this.state.pwdata.datatdList;
    
            this. max =  Math.max(...this.state.pwdata.datatdList) + 140;
@@ -372,7 +400,7 @@ export default class pw extends Component {
           this.myChart.setOption(this.option, true);
           this.myChart1.setOption(this.option1, true);
            
-        })
+      
     }
 
 

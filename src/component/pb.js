@@ -69,8 +69,24 @@ export default class pb extends Component {
             visible:false,
             title:'',
             pbColor: [{
+                'posdqsl': { zb: 0, gb: 2, yhs: 0,pb:0 },
+                'posljsl': { zb: 1, gb: 0, yhs: 0,pb:0 }
+            },
+            {
                 'posdqsl': { zb: 0, gb: 0, yhs: 0,pb:0 },
-                'posljsl': { zb: 0, gb: 0, yhs: 0,pb:0 }
+                'posljsl': { zb: 2, gb: 0, yhs: 0,pb:0 }
+            },
+            {
+                'posdqsl': { zb: 0, gb: 0, yhs: 2,pb:0 },
+                'posljsl': { zb: 0, gb: 1, yhs: 0,pb:0 }
+            },
+            {
+                'posdqsl': { zb: 0, gb: 0, yhs: 0,pb:0},
+                'posljsl': { zb: 0, gb: 0, yhs: 1,pb:0 }
+            },
+            {
+                'posdqsl': { zb: 0, gb: 0, yhs: 0,pb:0 },
+                'posljsl': { zb: 1, gb: 0, yhs: 0,pb:0 }
             },
             {
                 'posdqsl': { zb: 0, gb: 0, yhs: 0,pb:0 },
@@ -78,6 +94,10 @@ export default class pb extends Component {
             },
             {
                 'posdqsl': { zb: 0, gb: 0, yhs: 0,pb:0 },
+                'posljsl': { zb: 0, gb: 2, yhs: 0,pb:0 }
+            },
+            {
+                'posdqsl': { zb: 0, gb: 1, yhs: 0,pb:0 },
                 'posljsl': { zb: 0, gb: 0, yhs: 0,pb:0 }
             },
             {
@@ -85,37 +105,17 @@ export default class pb extends Component {
                 'posljsl': { zb: 0, gb: 0, yhs: 0,pb:0 }
             },
             {
-                'posdqsl': { zb: 0, gb: 0, yhs: 0,pb:0 },
-                'posljsl': { zb: 0, gb: 0, yhs: 0,pb:0 }
-            },
-            {
-                'posdqsl': { zb: 0, gb: 0, yhs: 0,pb:0 },
-                'posljsl': { zb: 0, gb: 0, yhs: 0,pb:0 }
-            },
-            {
-                'posdqsl': { zb: 0, gb: 0, yhs: 0,pb:0 },
-                'posljsl': { zb: 0, gb: 0, yhs: 0,pb:0 }
-            },
-            {
-                'posdqsl': { zb: 0, gb: 0, yhs: 0,pb:0 },
-                'posljsl': { zb: 0, gb: 0, yhs: 0,pb:0 }
-            },
-            {
-                'posdqsl': { zb: 0, gb: 0, yhs: 0,pb:0},
-                'posljsl': { zb: 0, gb: 0, yhs: 0,pb:0 }
-            },
-            {
-                'posdqsl': { zb: 0, gb: 0, yhs: 0,pb:0},
+                'posdqsl': { zb: 0, gb: 0, yhs: 1,pb:0},
                 'posljsl': { zb: 0, gb: 0, yhs: 0,pb:0 }
             },
             {
               
                 'posdqsl': { zb: 0, gb: 0, yhs: 0,pb:0 },
-                'posljsl': { zb: 0, gb: 0, yhs: 0,pb:0}
+                'posljsl': { zb: 2, gb: 0, yhs: 0,pb:0}
             },
             {
               
-                'posdqsl': { zb: 0, gb: 0, yhs: 0,pb:0 },
+                'posdqsl': { zb: 0, gb: 0, yhs: 1,pb:0 },
                 'posljsl': { zb: 0, gb: 0, yhs: 0,pb:0}
             }
 
@@ -164,7 +164,7 @@ export default class pb extends Component {
                    
                 }
                },
-                data: []
+               data: ['2020-11-23 10:00:47','2020-11-24 10:00:47','2020-11-25 10:00:47','2020-11-26 10:00:47','2020-11-27 10:00:47']
             },
             yAxis: {
                 type: 'value',
@@ -185,49 +185,49 @@ export default class pb extends Component {
                 {
                     name:'停电专变',
                     type:'line',                
-                    data:[]
+                    data:[200,400,600,300,400]
                 },
                 {
                     name:'停电公变',
                     type:'line',
                   
-                    data:[]
+                    data:[100,420,620,340,200]
                 },
                 {
                     name:'停电配变',
                     type:'line',
                     color:'green',
-                    data:[]
+                    data:[340,420,680,380,480]
                 },
                 {
                     name:'停电用户数',
                     type:'line',
                   
-                    data:[]
+                    data:[340,610,350,120,260]
                 },
                 {
                     name:'复电专变',
                     type:'line',
                    
-                    data:[]
+                    data:[250,310,650,180,170]
                 },
                 {
                     name:'复电公变',
                     type:'line',
                     color:'#59ba12',
-                    data:[]
+                    data:[260,410,270,350,450]
                 },
                 {
                     name:'复电配变',
                     type:'line',
                     color:'blue',
-                    data:[]
+                    data:[240,360,400,330,230]
                 },
                 {
                     name:'复电用户数',
                     type:'line',
                     color:'#00f6ff',                
-                    data:[]
+                    data:[220,310,200,350,130]
                 }
             ]
         }
@@ -259,41 +259,41 @@ export default class pb extends Component {
         },[1])
         
         if(i == 11){
-            tpbmodal()
-            .then(res => {      
-                for(let i in res.data){
-                    this.modalOption.xAxis.data[i] =  res.data[i].creationTime
-                    this.modalOption.series[0].data[i] =  res.data[i].pb.wfdzb
-                    this.modalOption.series[1].data[i] =  res.data[i].pb.wfdgb
-                    this.modalOption.series[2].data[i] =  res.data[i].pb.wfdpb
-                    this.modalOption.series[3].data[i] =  res.data[i].pb.dyyhs
-                    this.modalOption.series[4].data[i] =  res.data[i].pb.fdzb
-                    this.modalOption.series[5].data[i] =  res.data[i].pb.fdgb
-                    this.modalOption.series[6].data[i] =  res.data[i].pb.fdpb
-                    this.modalOption.series[7].data[i] =  res.data[i].pb.zbdyyhs
-                }
+            // tpbmodal()
+            // .then(res => {      
+            //     for(let i in res.data){
+            //         this.modalOption.xAxis.data[i] =  res.data[i].creationTime
+            //         this.modalOption.series[0].data[i] =  res.data[i].pb.wfdzb
+            //         this.modalOption.series[1].data[i] =  res.data[i].pb.wfdgb
+            //         this.modalOption.series[2].data[i] =  res.data[i].pb.wfdpb
+            //         this.modalOption.series[3].data[i] =  res.data[i].pb.dyyhs
+            //         this.modalOption.series[4].data[i] =  res.data[i].pb.fdzb
+            //         this.modalOption.series[5].data[i] =  res.data[i].pb.fdgb
+            //         this.modalOption.series[6].data[i] =  res.data[i].pb.fdpb
+            //         this.modalOption.series[7].data[i] =  res.data[i].pb.zbdyyhs
+            //     }
               
     
-                this.modalChart.setOption(this.modalOption)
-            })
+            //     this.modalChart.setOption(this.modalOption)
+            // })
          }else{
-            pbmodal({dq:v.name})
-            .then(res => {      
-                for(let i in res.data){
-                    this.modalOption.xAxis.data[i] =  res.data[i].creationTime
-                    this.modalOption.series[0].data[i] =  res.data[i].pb.wfdzb
-                    this.modalOption.series[1].data[i] =  res.data[i].pb.wfdgb
-                    this.modalOption.series[2].data[i] =  res.data[i].pb.wfdpb
-                    this.modalOption.series[3].data[i] =  res.data[i].pb.dyyhs
-                    this.modalOption.series[4].data[i] =  res.data[i].pb.fdzb
-                    this.modalOption.series[5].data[i] =  res.data[i].pb.fdgb
-                    this.modalOption.series[6].data[i] =  res.data[i].pb.fdpb
-                    this.modalOption.series[7].data[i] =  res.data[i].pb.zbdyyhs
-                }
+            // pbmodal({dq:v.name})
+            // .then(res => {      
+            //     for(let i in res.data){
+            //         this.modalOption.xAxis.data[i] =  res.data[i].creationTime
+            //         this.modalOption.series[0].data[i] =  res.data[i].pb.wfdzb
+            //         this.modalOption.series[1].data[i] =  res.data[i].pb.wfdgb
+            //         this.modalOption.series[2].data[i] =  res.data[i].pb.wfdpb
+            //         this.modalOption.series[3].data[i] =  res.data[i].pb.dyyhs
+            //         this.modalOption.series[4].data[i] =  res.data[i].pb.fdzb
+            //         this.modalOption.series[5].data[i] =  res.data[i].pb.fdgb
+            //         this.modalOption.series[6].data[i] =  res.data[i].pb.fdpb
+            //         this.modalOption.series[7].data[i] =  res.data[i].pb.zbdyyhs
+            //     }
               
     
-                this.modalChart.setOption(this.modalOption)
-            })
+            //     this.modalChart.setOption(this.modalOption)
+            // })
          }
 
 
@@ -308,9 +308,9 @@ export default class pb extends Component {
         if(date){
             params = {...date}
         }
-        pbData(params)
-        .then(res => {
-            this.state.yx = res.data;
+        // pbData(params)
+        // .then(res => {
+        //  this.state.yx = res.data;
             let mapData =    this.state.yx.map( (v,i) =>{
 
                 return {value: v.posdqsl.zb,'name': '停电'}
@@ -712,19 +712,19 @@ export default class pb extends Component {
             };
     
             myChart.setOption(option, true);
-        })
+        // })
 
       }
     componentDidMount() {
        this.sendpbdata(this.props.dateEnd);
-       pbColor()
-       .then(res => {
+    //    pbColor()
+    //    .then(res => {
        
      
-           this.setState({
-               pbColor: res.data,
-             });
-       })
+    //        this.setState({
+    //            pbColor: res.data,
+    //          });
+    //    })
       // this.props.getpbfn(this.sendpbdata);
     }
     z = () => {
