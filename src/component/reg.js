@@ -18,7 +18,7 @@ class reg extends React.Component {
     componentWillMount(){
        // console.log(this.props.match.params.mingzi)
        
-console.log(store.getState())
+console.log(encodeURIComponent("%E5%B0%8F%E6%98%8E"))
        console.log(this)
      this.setState( { mingzi: this.props.match.params.mingzi });
        // console.log(React.$getJsonByb4(this.props.match.params.mingzi))

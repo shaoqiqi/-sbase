@@ -9,78 +9,78 @@ export default class yxpb extends Component {
         this.state = {
             yxbp:
             [
-              // {
-              //   name: '海曙',
-              //   yx: {'posdqsl': {zb: 20, gb: 30, yhs: 10200}, 'posljsl': {zb: 70, gb: 80, yhs: 33100}},
-              //   pb: {'posdqsl': {zb: 18, gb: 28, yhs: 9200}, 'posljsl': {zb: 62, gb: 66, yhs: 32083}}
-              // },
-              //   {
-              //     name: '江北',
-              //     yx: {'posdqsl': {zb: 20, gb: 40, yhs: 17000}, 'posljsl': {zb: 300, gb: 20, yhs: 8300}},
-              //     pb: {'posdqsl': {zb: 18, gb: 37, yhs: 16210}, 'posljsl': {zb: 20, gb: 17, yhs: 8120}}
-              //   },
-              //   {
-              //     name: '镇海',
-              //     yx: {'posdqsl': {zb: 18, gb: 15, yhs: 6700}, 'posljsl': {zb: 20, gb: 25, yhs: 10800}},
-              //     pb: {'posdqsl': {zb: 10, gb: 11, yhs: 6646}, 'posljsl': {zb: 19, gb: 21, yhs: 9843}}
-              //   },
-              //   {
-              //     name: '北仑',
-              //     yx: {'posdqsl': {zb: 10, gb: 12, yhs: 5150}, 'posljsl': {zb: 30, gb: 15, yhs: 6450}},
-              //     pb: {'posdqsl': {zb: 5, gb: 8, yhs: 4150}, 'posljsl': {zb: 28, gb: 12, yhs: 5869}}
-              //   },
-              //   {
-              //     name: '杭湾',
-              //     yx: {'posdqsl': {zb: 8, gb: 10, yhs: 4150}, 'posljsl': {zb: 26, gb: 12, yhs: 6050}},
-              //     pb: {'posdqsl': {zb: 8, gb: 10, yhs: 4150}, 'posljsl': {zb: 26, gb: 12, yhs: 6050}}
-              //   },
-              //   {
-              //     name: '鄞州',
-              //     yx: {'posdqsl': {zb: 10, gb: 22, yhs: 9270}, 'posljsl': {zb: 30, gb: 10, yhs: 4690}},
-              //     pb: {'posdqsl': {zb: 8, gb: 18, yhs: 8270}, 'posljsl': {zb: 28, gb: 8, yhs: 3812}}
-              //   },
-              //   {
-              //     name: '慈溪',
-              //     yx: {'posdqsl': {zb: 20, gb: 30, yhs: 12420}, 'posljsl': {zb: 19, gb: 22, yhs: 9210}},
-              //     pb: {'posdqsl': {zb: 15, gb: 28, yhs: 1120}, 'posljsl': {zb: 14, gb: 20, yhs: 8564}}
-              //   },
-              //   {
-              //     name: '余姚',
-              //     yx: {'posdqsl': {zb: 15, gb: 16, yhs: 7280}, 'posljsl': {zb: 16, gb: 11, yhs: 5150}},
-              //     pb: {'posdqsl': {zb: 12, gb: 14, yhs: 6280}, 'posljsl': {zb: 11, gb: 10, yhs: 4550}}
-              //   },
-              //   {
-              //     name: '奉化',
-              //     yx: {'posdqsl': {zb: 19, gb: 21, yhs: 4840}, 'posljsl': {zb: 9, gb: 9, yhs: 3920}},
-              //     pb: {'posdqsl': {zb: 14, gb: 16, yhs: 3840}, 'posljsl': {zb: 9, gb: 7, yhs: 3520}}
-              //   },
-              //   {
-              //     name: '宁海',
-              //     yx: {'posdqsl': {zb: 17, gb: 16, yhs: 6650}, 'posljsl': {zb: 30, gb: 14, yhs: 5890}},
-              //     pb: {'posdqsl': {zb: 14, gb: 13, yhs: 5650}, 'posljsl': {zb: 26, gb: 11, yhs: 5190}}
-              //   },
-              //   {
-              //     name: '象山',
-              //     yx: {'posdqsl': {zb: 18, gb: 12, yhs: 5290}, 'posljsl': {zb: 15, gb: 7, yhs: 3160}},
-              //     pb: {'posdqsl': {zb: 11, gb: 9, yhs: 4290}, 'posljsl': {zb: 10, gb: 3, yhs: 2046}}
-              //   }
+              {
+                name: '海曙',
+                yx: {'posdqsl': {zb: 20, gb: 30, yhs: 10200}, 'posljsl': {zb: 70, gb: 80, yhs: 33100}},
+                pb: {'posdqsl': {zb: 18, gb: 28, yhs: 9200}, 'posljsl': {zb: 62, gb: 66, yhs: 32083}}
+              },
+                {
+                  name: '江北',
+                  yx: {'posdqsl': {zb: 20, gb: 40, yhs: 17000}, 'posljsl': {zb: 300, gb: 20, yhs: 8300}},
+                  pb: {'posdqsl': {zb: 18, gb: 37, yhs: 16210}, 'posljsl': {zb: 20, gb: 17, yhs: 8120}}
+                },
+                {
+                  name: '镇海',
+                  yx: {'posdqsl': {zb: 18, gb: 15, yhs: 6700}, 'posljsl': {zb: 20, gb: 25, yhs: 10800}},
+                  pb: {'posdqsl': {zb: 10, gb: 11, yhs: 6646}, 'posljsl': {zb: 19, gb: 21, yhs: 9843}}
+                },
+                {
+                  name: '北仑',
+                  yx: {'posdqsl': {zb: 10, gb: 12, yhs: 5150}, 'posljsl': {zb: 30, gb: 15, yhs: 6450}},
+                  pb: {'posdqsl': {zb: 5, gb: 8, yhs: 4150}, 'posljsl': {zb: 28, gb: 12, yhs: 5869}}
+                },
+                {
+                  name: '杭湾',
+                  yx: {'posdqsl': {zb: 8, gb: 10, yhs: 4150}, 'posljsl': {zb: 26, gb: 12, yhs: 6050}},
+                  pb: {'posdqsl': {zb: 8, gb: 10, yhs: 4150}, 'posljsl': {zb: 26, gb: 12, yhs: 6050}}
+                },
+                {
+                  name: '鄞州',
+                  yx: {'posdqsl': {zb: 10, gb: 22, yhs: 9270}, 'posljsl': {zb: 30, gb: 10, yhs: 4690}},
+                  pb: {'posdqsl': {zb: 8, gb: 18, yhs: 8270}, 'posljsl': {zb: 28, gb: 8, yhs: 3812}}
+                },
+                {
+                  name: '慈溪',
+                  yx: {'posdqsl': {zb: 20, gb: 30, yhs: 12420}, 'posljsl': {zb: 19, gb: 22, yhs: 9210}},
+                  pb: {'posdqsl': {zb: 15, gb: 28, yhs: 1120}, 'posljsl': {zb: 14, gb: 20, yhs: 8564}}
+                },
+                {
+                  name: '余姚',
+                  yx: {'posdqsl': {zb: 15, gb: 16, yhs: 7280}, 'posljsl': {zb: 16, gb: 11, yhs: 5150}},
+                  pb: {'posdqsl': {zb: 12, gb: 14, yhs: 6280}, 'posljsl': {zb: 11, gb: 10, yhs: 4550}}
+                },
+                {
+                  name: '奉化',
+                  yx: {'posdqsl': {zb: 19, gb: 21, yhs: 4840}, 'posljsl': {zb: 9, gb: 9, yhs: 3920}},
+                  pb: {'posdqsl': {zb: 14, gb: 16, yhs: 3840}, 'posljsl': {zb: 9, gb: 7, yhs: 3520}}
+                },
+                {
+                  name: '宁海',
+                  yx: {'posdqsl': {zb: 17, gb: 16, yhs: 6650}, 'posljsl': {zb: 30, gb: 14, yhs: 5890}},
+                  pb: {'posdqsl': {zb: 14, gb: 13, yhs: 5650}, 'posljsl': {zb: 26, gb: 11, yhs: 5190}}
+                },
+                {
+                  name: '象山',
+                  yx: {'posdqsl': {zb: 18, gb: 12, yhs: 5290}, 'posljsl': {zb: 15, gb: 7, yhs: 3160}},
+                  pb: {'posdqsl': {zb: 11, gb: 9, yhs: 4290}, 'posljsl': {zb: 10, gb: 3, yhs: 2046}}
+                }
               ],
             activeIndex: -1,
             visible:false,
             title:'',
-            yxpbColor:[{yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},
-                pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
+            yxpbColor:[{yx:{posdqsl:{zb: 2, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 2, yhs: 0}},
+                pb:{posdqsl:{zb: 0, gb: 2, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
+                {yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 1, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
+                {yx:{posdqsl:{zb: 0, gb: 1, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}}
+                ,{yx:{posdqsl:{zb: 1, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
+                {yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 2, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
+                {yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 1, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
+                {yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 2, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
+                {yx:{posdqsl:{zb: 0, gb: 0, yhs: 2},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
+                {yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 1, yhs: 0}}},
+                {yx:{posdqsl:{zb: 0, gb: 1, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
                 {yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
-                {yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}}
-                ,{yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
-                {yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
-                {yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
-                {yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
-                {yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
-                {yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
-                {yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
-                {yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}},
-                {yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 0, yhs: 0}}}]
+                {yx:{posdqsl:{zb: 0, gb: 0, yhs: 0},posljsl:{zb: 0, gb: 2, yhs: 0}},pb:{posdqsl:{zb: 0, gb: 1, yhs: 0},posljsl:{zb: 0, gb: 2, yhs: 0}}}]
            
         };
 
@@ -126,7 +126,7 @@ export default class yxpb extends Component {
                    
                 }
                },
-                data: []
+               data: ['2020-11-23 10:00:47','2020-11-24 10:00:47','2020-11-25 10:00:47','2020-11-26 10:00:47','2020-11-27 10:00:47']
             },
             yAxis: {
                 type: 'value',
@@ -147,37 +147,37 @@ export default class yxpb extends Component {
                 {
                     name:'停电专变',
                     type:'line',                
-                    data:[]
+                    data:[200,400,600,300,400]
                 },
                 {
                     name:'停电公变',
                     type:'line',
                   
-                    data:[]
+                    data:[100,300,500,300,100]
                 },
                 {
                     name:'停电用户数',
                     type:'line',
                   
-                    data:[]
+                    data:[300,100,360,100,250]
                 },
                 {
                     name:'复电专变',
                     type:'line',
                    
-                    data:[]
+                    data:[500,260,400,150,410]
                 },
                 {
                     name:'复电公变',
                     type:'line',
                     color:'#59ba12',
-                    data:[]
+                    data:[190,160,240,100,220]
                 },
                 {
                     name:'复电用户数',
                     type:'line',
                     color:'#00f6ff',                
-                    data:[]
+                    data:[300,200,400,150,320]
                 }
             ]
         }
@@ -196,11 +196,11 @@ export default class yxpb extends Component {
         if(date){
             params = {...date}
         }
-        yxpbData(params)
-        .then((res)=>{
-           console.log(res)
-       // this.setState(yxbp)
-        this.state.yxbp = res.data;
+    //     yxpbData(params)
+    //     .then((res)=>{
+    //        console.log(res)
+    //    // this.setState(yxbp)
+    //     this.state.yxbp = res.data;
         
           let zjObj = {
               name: '总计',
@@ -215,8 +215,7 @@ export default class yxpb extends Component {
               zjObj.yx.posdqsl.yhs += this.state.yxbp[i].yx.posdqsl.yhs;
               zjObj.yx.posljsl.zb += this.state.yxbp[i].yx.posljsl.zb;
               zjObj.yx.posljsl.gb += this.state.yxbp[i].yx.posljsl.gb;
-              zjObj.yx.posljsl.yhs += this.state.yxbp[i].yx.posljsl.yhs;
-  
+              zjObj.yx.posljsl.yhs += this.state.yxbp[i].yx.posljsl.yhs; 
               zjObj.pb.posdqsl.zb += this.state.yxbp[i].pb.posdqsl.zb;
               zjObj.pb.posdqsl.gb += this.state.yxbp[i].pb.posdqsl.gb;
               zjObj.pb.posdqsl.yhs += this.state.yxbp[i].pb.posdqsl.yhs;
@@ -256,7 +255,7 @@ export default class yxpb extends Component {
            );
   
           this.setState({ yxpb: this.state.yxbp ,activeIndex:-1})
-        })
+      //  })
 
 
     }
@@ -264,15 +263,15 @@ export default class yxpb extends Component {
      
 
      
-      yxpbColor()
-      .then(res => {
+    //   yxpbColor()
+    //   .then(res => {
          
 
-          // this.state.yxpColor=res.data;
-           this.setState({
-            yxpbColor: res.data,
-          });
-      })
+    //       // this.state.yxpColor=res.data;
+    //        this.setState({
+    //         yxpbColor: res.data,
+    //       });
+    //   })
       this.sendyxpbdata();
       this.props.getyxpbfn(this.sendyxpbdata);
     }
@@ -298,21 +297,21 @@ export default class yxpb extends Component {
         if(actIndex.length == 2){
             this.setState({ activeIndex: i, visible: true,title:v.name+"同比数据"})
             if(i == 11){
-                tyxpbmodal()
-                .then(res => {                     
-                    for(let i in res.data){
-                        this.modalOption.xAxis.data[i] =  res.data[i].creationTime
-                        this.modalOption.series[0].data[i] =  res.data[i].yx.zbtds
-                        this.modalOption.series[1].data[i] =  res.data[i].yx.gbtds
-                        this.modalOption.series[2].data[i] =  res.data[i].yx.dqtdyhs
-                        this.modalOption.series[3].data[i] =  res.data[i].yx.zbfds_lj
-                        this.modalOption.series[4].data[i] =  res.data[i].yx.gbfds_lj
-                        this.modalOption.series[5].data[i] =  res.data[i].yx.ljtdyhs
-                    }      
-                     this.modalChart.setOption(this.modalOption)
-                })
-                tbz()
-                .then(res => {
+                // tyxpbmodal()
+                // .then(res => {                     
+                //     for(let i in res.data){
+                //         this.modalOption.xAxis.data[i] =  res.data[i].creationTime
+                //         this.modalOption.series[0].data[i] =  res.data[i].yx.zbtds
+                //         this.modalOption.series[1].data[i] =  res.data[i].yx.gbtds
+                //         this.modalOption.series[2].data[i] =  res.data[i].yx.dqtdyhs
+                //         this.modalOption.series[3].data[i] =  res.data[i].yx.zbfds_lj
+                //         this.modalOption.series[4].data[i] =  res.data[i].yx.gbfds_lj
+                //         this.modalOption.series[5].data[i] =  res.data[i].yx.ljtdyhs
+                //     }      
+                //      this.modalChart.setOption(this.modalOption)
+                // })
+                // tbz()
+                // .then(res => {
                      
                       this.props.yxObj({
                         name: v.name, 
@@ -325,13 +324,13 @@ export default class yxpb extends Component {
                         yhs: v.pb.posdqsl.yhs + v.pb.posljsl.yhs
                        },
                        index: i            
-                    },actIndex,res.data)
-                })
+                    },actIndex,{yxZbtds:10,pbZbtds:20,yxGbtds:10,pbGbtds:20,yxTdyhs:10,pbTdyhs:20})
+               // })
              }else{
-                tb({dq:v.name})
-                .then(res => {
+                // tb({dq:v.name})
+                // .then(res => {
                     
-                      this.props.yxObj({
+                    this.props.yxObj({
                         name: v.name, 
                        yx:{
                           zb: v.yx.posdqsl.zb+v.yx.posljsl.zb, gsl: v.yx.posdqsl.gb + v.yx.posljsl.gb,
@@ -342,21 +341,21 @@ export default class yxpb extends Component {
                         yhs: v.pb.posdqsl.yhs + v.pb.posljsl.yhs
                        },
                        index: i            
-                    },actIndex,res.data)
-                })
-                yxpbmodal({dq:v.name})
-                .then(res => {      
-                    for(let i in res.data){
-                        this.modalOption.xAxis.data[i] =  res.data[i].creationTime
-                        this.modalOption.series[0].data[i] =  res.data[i].yx.zbtds
-                        this.modalOption.series[1].data[i] =  res.data[i].yx.gbtds
-                        this.modalOption.series[2].data[i] =  res.data[i].yx.dqtdyhs
-                        this.modalOption.series[3].data[i] =  res.data[i].yx.zbfds_lj
-                        this.modalOption.series[4].data[i] =  res.data[i].yx.gbfds_lj
-                        this.modalOption.series[5].data[i] =  res.data[i].yx.ljtdyhs
-                    }       
-                    this.modalChart.setOption(this.modalOption)
-                })
+                    },actIndex,{yxZbtds:10,pbZbtds:20,yxGbtds:10,pbGbtds:20,yxTdyhs:10,pbTdyhs:20})
+              //  })
+                // yxpbmodal({dq:v.name})
+                // .then(res => {      
+                //     for(let i in res.data){
+                //         this.modalOption.xAxis.data[i] =  res.data[i].creationTime
+                //         this.modalOption.series[0].data[i] =  res.data[i].yx.zbtds
+                //         this.modalOption.series[1].data[i] =  res.data[i].yx.gbtds
+                //         this.modalOption.series[2].data[i] =  res.data[i].yx.dqtdyhs
+                //         this.modalOption.series[3].data[i] =  res.data[i].yx.zbfds_lj
+                //         this.modalOption.series[4].data[i] =  res.data[i].yx.gbfds_lj
+                //         this.modalOption.series[5].data[i] =  res.data[i].yx.ljtdyhs
+                //     }       
+                //     this.modalChart.setOption(this.modalOption)
+                // })
              }
 
 

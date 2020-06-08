@@ -34,7 +34,7 @@ class Login extends React.Component {
    }
   aaaww(a,v,w){
 	 // alert(132)
-	//this.props.history.push({pathname:'reg',state:{aaa:123}})
+	this.props.history.push("reg?name=小明")
 	console.log(a,w)
   }
    handleDateChange(){

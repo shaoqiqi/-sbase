@@ -73,12 +73,32 @@ export default class yx extends Component {
             yxColor:[{
               
                 'posdqsl': { zb: 0, gb: 0, yhs: 0 },
-                'posljsl': {  zb: 0, gb: 0, yhs: 0}
+                'posljsl': {  zb: 0, gb: 1, yhs: 0}
             },
             {
              
                 'posdqsl': { zb: 0, gb: 0, yhs: 0 },
+                'posljsl': {  zb: 1, gb: 0, yhs: 0}
+            },
+            {
+                'posdqsl': { zb: 0, gb: 0, yhs: 0 },
+                'posljsl': {  zb: 0, gb: 1, yhs: 0}
+            },
+            {
+                'posdqsl': { zb: 0, gb: 0, yhs: 0 },
+                'posljsl': {  zb: 2, gb: 0, yhs: 0}
+            },
+            {
+                'posdqsl': { zb: 0, gb: 0, yhs: 0 },
+                'posljsl': {  zb: 2, gb: 2, yhs: 0}
+            },
+            {
+                'posdqsl': { zb: 0, gb: 0, yhs: 0 },
                 'posljsl': {  zb: 0, gb: 0, yhs: 0}
+            },
+            {
+                'posdqsl': { zb: 0, gb: 0, yhs: 1 },
+                'posljsl': {  zb: 2, gb: 0, yhs: 2}
             },
             {
                 'posdqsl': { zb: 0, gb: 0, yhs: 0 },
@@ -86,7 +106,7 @@ export default class yx extends Component {
             },
             {
                 'posdqsl': { zb: 0, gb: 0, yhs: 0 },
-                'posljsl': {  zb: 0, gb: 0, yhs: 0}
+                'posljsl': {  zb: 1, gb: 0, yhs: 0}
             },
             {
                 'posdqsl': { zb: 0, gb: 0, yhs: 0 },
@@ -94,31 +114,11 @@ export default class yx extends Component {
             },
             {
                 'posdqsl': { zb: 0, gb: 0, yhs: 0 },
-                'posljsl': {  zb: 0, gb: 0, yhs: 0}
+                'posljsl': {  zb: 1, gb: 2, yhs: 1}
             },
             {
                 'posdqsl': { zb: 0, gb: 0, yhs: 0 },
-                'posljsl': {  zb: 0, gb: 0, yhs: 0}
-            },
-            {
-                'posdqsl': { zb: 0, gb: 0, yhs: 0 },
-                'posljsl': {  zb: 0, gb: 0, yhs: 0}
-            },
-            {
-                'posdqsl': { zb: 0, gb: 0, yhs: 0 },
-                'posljsl': {  zb: 0, gb: 0, yhs: 0}
-            },
-            {
-                'posdqsl': { zb: 0, gb: 0, yhs: 0 },
-                'posljsl': {  zb: 0, gb: 0, yhs: 0}
-            },
-            {
-                'posdqsl': { zb: 0, gb: 0, yhs: 0 },
-                'posljsl': {  zb: 0, gb: 0, yhs: 0}
-            },
-            {
-                'posdqsl': { zb: 0, gb: 0, yhs: 0 },
-                'posljsl': {  zb: 0, gb: 0, yhs: 0}
+                'posljsl': {  zb: 2, gb: 1, yhs: 0}
             }
            ]
         };
@@ -160,11 +160,10 @@ export default class yx extends Component {
                },
                axisLine:{
                 lineStyle:{
-                    color:'#ffffff',
-                   
+                    color:'#ffffff',                  
                 }
                },
-                data: []
+                data: ['2020-11-23 10:00:47','2020-11-24 10:00:47','2020-11-25 10:00:47','2020-11-26 10:00:47','2020-11-27 10:00:47']
             },
             yAxis: {
                 type: 'value',
@@ -185,37 +184,37 @@ export default class yx extends Component {
                 {
                     name:'停电专变',
                     type:'line',                
-                    data:[]
+                    data:[200,400,600,300,400]
                 },
                 {
                     name:'停电公变',
                     type:'line',
                   
-                    data:[]
+                    data:[100,300,500,300,100]
                 },
                 {
                     name:'停电用户数',
                     type:'line',
                   
-                    data:[]
+                    data:[300,100,360,100,250]
                 },
                 {
                     name:'复电专变',
                     type:'line',
                    
-                    data:[]
+                    data:[500,260,400,150,410]
                 },
                 {
                     name:'复电公变',
                     type:'line',
                     color:'#59ba12',
-                    data:[]
+                    data:[190,160,240,100,220]
                 },
                 {
                     name:'复电用户数',
                     type:'line',
                     color:'#00f6ff',                
-                    data:[]
+                    data:[300,200,400,150,320]
                 }
             ]
         }
@@ -226,9 +225,9 @@ export default class yx extends Component {
         if(date){
             params = {...date}
         }
-        yxData(params)
-        .then(res => {
-            this.state.yx = res.data;
+        //yxData(params)
+       // .then(res => {
+           // this.state.yx = res.data;
 
             let mapData =    this.state.yx.map( (v,i) =>{
 
@@ -552,19 +551,19 @@ export default class yx extends Component {
                 ]
             };    
             myChart.setOption(option, true);
-        })
+        //})
     }
     componentDidMount() {
         
         this.sendyxdata(this.props.dateEnd);
-        yxColor()
-        .then(res => {
+        // yxColor()
+        // .then(res => {
         
          
-            this.setState({
-                yxColor: res.data,
-              });
-        })
+        //     this.setState({
+        //         yxColor: res.data,
+        //       });
+        // })
        // this.props.getyxfn(this.sendyxdata);
     }
     emityxObj(v, i) {
@@ -580,37 +579,37 @@ export default class yx extends Component {
             yhs: v.posdqsl.yhs + v.posljsl.yhs, index: i
         },[0])
      if(i == 11){
-        tyxmodal({dq:v.name})
-        .then(res => {      
-            for(let i in res.data){
-                this.modalOption.xAxis.data[i] =  res.data[i].creationTime
-                this.modalOption.series[0].data[i] =  res.data[i].yx.zbtds
-                this.modalOption.series[1].data[i] =  res.data[i].yx.gbtds
-                this.modalOption.series[2].data[i] =  res.data[i].yx.dqtdyhs
-                this.modalOption.series[3].data[i] =  res.data[i].yx.zbfds_lj
-                this.modalOption.series[4].data[i] =  res.data[i].yx.gbfds_lj
-                this.modalOption.series[5].data[i] =  res.data[i].yx.ljtdyhs
-            }
+        // tyxmodal({dq:v.name})
+        // .then(res => {      
+        //     for(let i in res.data){
+        //         this.modalOption.xAxis.data[i] =  res.data[i].creationTime
+        //         this.modalOption.series[0].data[i] =  res.data[i].yx.zbtds
+        //         this.modalOption.series[1].data[i] =  res.data[i].yx.gbtds
+        //         this.modalOption.series[2].data[i] =  res.data[i].yx.dqtdyhs
+        //         this.modalOption.series[3].data[i] =  res.data[i].yx.zbfds_lj
+        //         this.modalOption.series[4].data[i] =  res.data[i].yx.gbfds_lj
+        //         this.modalOption.series[5].data[i] =  res.data[i].yx.ljtdyhs
+        //     }
           
 
-            this.modalChart.setOption(this.modalOption)
-        })
+        //     this.modalChart.setOption(this.modalOption)
+        // })
      }else{
-        yxmodal({dq:v.name})
-        .then(res => {      
-            for(let i in res.data){
-                this.modalOption.xAxis.data[i] =  res.data[i].creationTime
-                this.modalOption.series[0].data[i] =  res.data[i].yx.zbtds
-                this.modalOption.series[1].data[i] =  res.data[i].yx.gbtds
-                this.modalOption.series[2].data[i] =  res.data[i].yx.dqtdyhs
-                this.modalOption.series[3].data[i] =  res.data[i].yx.zbfds_lj
-                this.modalOption.series[4].data[i] =  res.data[i].yx.gbfds_lj
-                this.modalOption.series[5].data[i] =  res.data[i].yx.ljtdyhs
-            }
+        // yxmodal({dq:v.name})
+        // .then(res => {      
+        //     for(let i in res.data){
+        //         this.modalOption.xAxis.data[i] =  res.data[i].creationTime
+        //         this.modalOption.series[0].data[i] =  res.data[i].yx.zbtds
+        //         this.modalOption.series[1].data[i] =  res.data[i].yx.gbtds
+        //         this.modalOption.series[2].data[i] =  res.data[i].yx.dqtdyhs
+        //         this.modalOption.series[3].data[i] =  res.data[i].yx.zbfds_lj
+        //         this.modalOption.series[4].data[i] =  res.data[i].yx.gbfds_lj
+        //         this.modalOption.series[5].data[i] =  res.data[i].yx.ljtdyhs
+        //     }
           
 
-            this.modalChart.setOption(this.modalOption)
-        })
+        //     this.modalChart.setOption(this.modalOption)
+        // })
      }
      
        
@@ -664,7 +663,7 @@ export default class yx extends Component {
                     footer={null}
                     style={{paddingBottom: '0px'}}
                     >
-                 <div className="modale" ref={this.moda}></div> 
+                  <div className="modale" ref={this.moda}></div> 
                     </Modal>
                     
                    
@@ -675,8 +674,7 @@ export default class yx extends Component {
                 <div className={'z '+(this.state.activez?'z1':'')} onClick={this.z} ><span>表格</span></div>
                 <div className={'y '+(this.state.activez?'':'y1')} onClick={this.y} ><span>图表</span></div>
                 <div className='fanye' style={{ marginLeft: this.state.left }}>
-                    <div className="bg">
-                
+                    <div className="bg">               
                 <div className="yx-home pos"></div>
                 <div className="yx-td posdq yx-pos"><span>当前停电</span></div>
                 <div className="yx-td poslj yx-pos"><span>累计复电</span></div>
